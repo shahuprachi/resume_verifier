@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SkillVerify AI</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Segoe UI;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 60px;
+        border-radius: 25px;
+        backdrop-filter: blur(15px);
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.4);
+        width: 420px;
+      }
+
+      button {
+        margin-top: 30px;
+        padding: 15px 40px;
+        font-size: 18px;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(45deg, #ff512f, #dd2476);
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>SkillVerify AI</h1>
+
+      <h2>Your Score: {{score}}%</h2>
+
+      <h3>Skill Authenticity Level: {{authenticity}}%</h3>
+
+      <form action="/">
+        <button>Verify Another Resume</button>
+      </form>
+    </div>
+  </body>
+</html>
